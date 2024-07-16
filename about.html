@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <!--Linking CSS File-->
+    <link rel="stylesheet" href="style.css">
+    <!--Linking Icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--Linking Poppins Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins&display=swap"
+        rel="stylesheet">
+    <!--Linking Favicon-->
+    <link rel="icon" href="assets/favicon-landingpage.jpg">
+
+    <!--Styling about page-->
+    <style>
+        .main {
+            margin: 0px;
+            padding: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <!--System NavigationBar-->
+    <nav class="system-navigation">
+        <div class="brand-icon">
+            <h1>
+                <i class="fa-solid fa-code-branch"></i>
+                Nekit
+            </h1>
+        </div>
+        <div class="menu">
+            <div class="Home">
+                <p>
+                    <a href="index.html">Home</a>
+
+                </p>
+            </div>
+            <div class="Contact Us">
+                <p>
+                    <a href="contact.html">Contact Us</a>
+                </p>
+            </div>
+        </div>
+        <div class="mobile-navigation" onclick="sidenavigation()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+
+    <!--Mobile NavigationBar-->
+    <div class="sidenavbar">
+        <p class="close-icon" onclick="closenavbar()">
+            <i class="fa-solid fa-circle-xmark"></i>
+        </p>
+        <div class="sidemenu">
+            <div class="Home">
+                <p>
+                    <a href="index.html">Home</a>
+
+                </p>
+            </div>
+            <div class="Contact Us">
+                <p>
+                    <a href="contact.html">Contact Us</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!--About Content-->
+    <main class="main">
+        <div class="content">
+            <h1>About Us</h1><br>
+            <h4>
+                Welcome to Nekit, where creativity meets innovation. We are a team of passionate designers dedicated to
+                transforming ideas into visually stunning and functionally efficient designs. Our mission is to empower
+                brands and individuals through unique and impactful design solutions.
+            </h4>
+            <br>
+            <h1>Our Vision</h1>
+            <h4>To be a leader in the design industry by continuously pushing the boundaries of creativity and
+                delivering exceptional value to our clients.</h4>
+            <br>
+            <h1>Our Mission</h1>
+            <h4>Our mission is to provide innovative design solutions that not only meet but exceed our clients'
+                expectations. We strive to create designs that are not only visually appealing but also strategically
+                aligned with our clients' goals.</h4>
+            <br>
+
+            <p>Thank you for considering Nekit. We look forward to collaborating with you and bringing your vision to
+                life.</p>
+        </div>
+    </main>
+
+    <!--Footer Content-->
+    <footer class="footer">
+        <h1>Let's connect!</h1><br>
+        <form>
+            <input type="email" id="footer-text" placeholder="type your e-mail here...">
+            <button onclick="alerting()">join</button><br><br>
+            <div class="links">
+                <span class="insta">
+                    <a href="https://www.instagram.com/madhesh_2005/" target="_blank"><i
+                            class="fa-brands fa-instagram"></i></a>
+                </span>
+                <span class="linked">
+                    <a href="https://www.linkedin.com/in/madheshr005/" target="_blank"><i
+                            class="fa-brands fa-linkedin-in"></i></a>
+
+                </span>
+                <span class="gmail">
+                    <a href="mailto:madheshr005gmail.com" target="_blank"><i class="fa-brands fa-google-plus-g"></i></a>
+
+                </span>
+            </div>
+        </form>
+
+    </footer>
+
+
+    <!--Linking Javascript File-->
+    <script src="script.js"></script>
+</body>
+
+</html>
